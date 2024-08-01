@@ -4,9 +4,9 @@ class Solution {
         for (String detail : details) {
             // the age substring from the detail string
             String ageStr = detail.substring(11, 13);
-            // Convert the age substring to an integer
+            // Converting the age substring to an integer
             int age = Integer.parseInt(ageStr);
-            // Check if the age is greater than 60
+            // Checking if the age is greater than 60
             if (age > 60) {
                 seniorCount++;
             }
