@@ -3,7 +3,7 @@ class Solution {
         int mod = 1000000007;
         ArrayList<Integer> subarraySums = new ArrayList<>();
         
-        // Compute sums of all possible subarrays
+        // Computing sums of all possible subarrays
         for (int i = 0; i < n; i++) {
             int sum = 0;
             for (int j = i; j < n; j++) {
@@ -12,10 +12,10 @@ class Solution {
             }
         }
         
-        // Sort the list of subarray sums
+        // Sorting the list of subarray sums
         Collections.sort(subarraySums);
         
-        // Compute the sum of the elements from index left to right
+        // Computing the sum of the elements from index left to right
         long result = 0;
         for (int i = left - 1; i < right; i++) {
             result = (result + subarraySums.get(i)) % mod;
